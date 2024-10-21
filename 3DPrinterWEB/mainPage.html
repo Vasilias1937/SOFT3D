@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\MainPagestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images\photo_2024-02-05_19-48-04.jpg">
+    <title>SOFT3D</title>
+</head>
+<body>
+    <header class="mainPageHeader">
+        <nav class="navbar flexContainer">
+            <a class="elemOfNav linkOfNav flexItem" href="mainPage.html">SOFT3D</a>
+            <a class="elemOfNav linkOfNav flexItem ">Продукция</a>
+            <a class="elemOfNav linkOfNav flexItem">Блог</a>
+            <a class="elemOfNav linkOfNav flexItem">О нас</a>
+            <a class="elemOfNav linkOfNav flexItem" href="#contact">Контакты</a>
+        </nav>
+        <div class="headerELEM">
+            <h1 class="elemOfHeader">Добро пожаловать в SOFT3D</h1>
+            <h2 class="elemOfHeader">Технология воплощающая идеи</h2>
+            <button class="elemOfHeader button">Узнать больше</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="plusplus">
+            <h2 class="mainSectionHeader">Что мы предлагаем</h2>
+            <div class="gridMainPage">
+                <div class="gridItem">
+                    <img src="images\СБ_кинематика 1.00.02.png" class="firtsPrinter">
+                    <p>Название модели</p>
+                    <p>Описание</p>
+                    <form action="Printer1.html" target="_blank"><button class="learnMoreButton">Подробнее</button></form>
+                </div>
+
+                <div class="gridItem">
+                    <img src="images\СБ_кинематика 1.00.02.png" class="firtsPrinter">
+                    <p>Название модели</p>
+                    <p>Описание</p>
+                    <form action="Printer2.html" target="_blank"><button class="learnMoreButton">Подробнее</button></form>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedbackSection">
+            <h1 class="feedbackHeader">Форма обратной связи</h1>  
+            <form class="feedback-form" action="submit_form.php" method="POST">  
+                <div class="form-group">  
+                    <label for="name">Имя:</label>  
+                    <input type="text" id="name" name="name" required>  
+                </div>  
+                <div class="form-group">  
+                    <label for="email">Email:</label>  
+                    <input type="email" id="email" name="email" required>  
+                </div>  
+                <div class="form-group">  
+                    <label for="message">Сообщение:</label>  
+                    <textarea id="message" name="message" rows="4" required></textarea>  
+                </div>  
+                <div class="form-group">  
+                    <button type="submit" class="feedbackbottom">Отправить</button>  
+                </div>  
+            </form>  
+    
+        </section>
+    </main>
+
+    <footer class="mainPageFooter" id="contact">
+
+        <div class="contact-info">  
+            <h3>Контакты</h3>  
+            <p>Телефон: +7 (123)456-78-90</p>  
+            <p>Email: info@example.com</p>  
+            <p>Адрес: г. Москва, ул. Примерная, дом1</p>  
+            </div>  
+            <div class="social-links">  
+            <a href="#">Telegram</a>  
+            <p>© 2024 Website. All rights reserved.</p>
+        </div>  
+    </footer>
+</body>
+</html>

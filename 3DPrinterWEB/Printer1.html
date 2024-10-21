@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles\MainPagestyle.css">
+        <link rel="stylesheet" href="styles\cards.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images\photo_2024-02-05_19-48-04.jpg">
+        <title>SOFT3D</title>
+    </head>
+
+    <body>
+        <header class="mainPageHeader">
+            <nav class="navbar flexContainer">
+                <a class="elemOfNav linkOfNav flexItem" href="mainPage.html">SOFT3D</a>
+                <a class="elemOfNav linkOfNav flexItem ">Продукция</a>
+                <a class="elemOfNav linkOfNav flexItem">Блог</a>
+                <a class="elemOfNav linkOfNav flexItem">О нас</a>
+                <a class="elemOfNav linkOfNav flexItem" href="#contact">Контакты</a>
+            </nav>
+            <div class="headerELEM">
+                <h1 class="elemOfHeader">Добро пожаловать в SOFT3D</h1>
+                <h2 class="elemOfHeader">Технология воплощающая идеи</h2>
+                <button class="elemOfHeader button">Узнать больше</button>
+            </div>
+        </header>
+        <main>
+            <div class="container">  
+                <div class="card" onclick="toggleInfo('info1')">  
+                    <h3>Карточка1</h3>  
+                    <div class="info" id="info1">  
+                    <p>Дополнительная информация о карточке1.</p>  
+                    </div>  
+                </div>  
+                <div class="card" onclick="toggleInfo('info2')">  
+                    <h3>Карточка2</h3>  
+                    <div class="info" id="info2">  
+                    <p>Дополнительная информация о карточке2.</p>  
+                    </div>  
+                </div>  
+                <div class="card" onclick="toggleInfo('info3')">  
+                    <h3>Карточка3</h3>  
+                    <div class="info" id="info3">  
+                    <p>Дополнительная информация о карточке3.</p>  
+                    </div>  
+                </div>  
+            </div>   
+                <script>  
+                function toggleInfo(infoId) {  
+                const infoElement = document.getElementById(infoId);  
+                infoElement.style.display = infoElement.style.display === 'block' ? 'none' : 'block';  
+                }  
+                </script> 
+
+            
+        </main>
+
+        <footer class="mainPageFooter" id="contact">
+
+            <div class="contact-info">  
+                <h3>Контакты</h3>  
+                <p>Телефон: +7 (123)456-78-90</p>  
+                <p>Email: info@example.com</p>  
+                <p>Адрес: г. Москва, ул. Примерная, дом1</p>  
+                </div>  
+                <div class="social-links">  
+                <a href="#">Telegram</a>  
+                <p>© 2024 Website. All rights reserved.</p>
+            </div>  
+        </footer>
+        
+    </body>
+
+</html>
